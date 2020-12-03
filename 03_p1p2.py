@@ -1,4 +1,4 @@
-f = open("C:/Users/Bearson/Documents/2020_aoc/03.txt", "r")
+f = open("C:/Users/Username/Documents/2020_aoc/03.txt", "r")
 l = f.read().split("\n")
 grid = []
 for line in l:
