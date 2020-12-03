@@ -1,12 +1,11 @@
-f = open("C:/Users/Bearson/Documents/2020_aoc/02.txt", "r")
+f = open("C:/Users/Username/Documents/2020_aoc/02.txt", "r")
 l = f.read().split("\n")
 
 data = []
 for line in l:
     data.append(line.replace(":", "").replace("-", " ").split(" "))
 
-count = 0
-valid = 0
+count = valid = 0
 
 for rule in data:
     for c in rule[3]:
