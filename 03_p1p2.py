@@ -5,9 +5,7 @@ for line in l:
     grid.append(line*200)
 
 def slope_change(right_inc, down_inc):
-    hor = 0
-    ver = 0
-    found = 0
+    hor = ver = found = 0
     
     while True:
         hor += right_inc
@@ -16,7 +14,8 @@ def slope_change(right_inc, down_inc):
             found += 1
         #print(ver, ", ", hor)
         if ver + down_inc >= len(grid):
-            break    
+            break
+            
     return found
     
 slope = [[1,1],[3,1],[5,1],[7,1],[1,2]]
