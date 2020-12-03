@@ -1,4 +1,4 @@
-f = open("C:/Users/Bearson/Documents/2020_aoc/01_bigboy.txt", "r")
+f = open("C:/Users/Username/Documents/2020_aoc/01_bigboy.txt", "r")
 nums_s = f.read().split("\n")
 ints_low = []
 ints_all = []
