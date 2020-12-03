@@ -7,14 +7,12 @@ for line in l:
 def slope_change(right_inc, down_inc):
     hor = ver = found = 0
     
-    while True:
+    while ver + down_inc < len(grid):
         hor += right_inc
         ver += down_inc
         if grid[ver][hor] == "#":
             found += 1
         #print(ver, ", ", hor)
-        if ver + down_inc >= len(grid):
-            break
             
     return found
     
